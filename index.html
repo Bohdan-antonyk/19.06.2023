@@ -6,6 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="styles/stylesheet.css">
     <link rel="stylesheet" href="styles/style.css">
     <title>19.06.2023 Pro code homework</title>
 </head>
@@ -260,8 +261,10 @@
     <div class="container">
         <h2>Заповніть форму і ми зв'яжемся з Вами</h2>
         <form method="POST">
-            <input class="input-value" type="text" id="name" name="name" placeholder="Ваше ім'я" required><br><br>
-            <input class="input-value" type="number" id="phone" name="phone" placeholder="Номер телефона" required><br>
+            <label for="name"></label><input class="input-value" type="text" id="name" name="name"
+                                             placeholder="Ваше ім'я" required><br><br>
+            <label for="phone"></label><input class="input-value" type="number" id="phone" name="phone"
+                                              placeholder="Номер телефона" required><br>
             <input type="radio" id="agreement" name="agreement" value="yes" required>
             <label class="label" for="agreement">Я згідний надати свої персональні дані</label><br><br>
             <input class="submit-button-form" type="submit" value="Відправити">
@@ -301,6 +304,7 @@
     </div>
 </section>
 <footer class="footer">
+    <div class="line-footer-all-width"></div>
     <div class="container">
         <div class="line-footer"></div>
         <div class="wrapper-title-footer">
@@ -334,7 +338,7 @@
         <a href="mailto: work@procode.ua">work@procode.ua</a>
         <a class="number" href="tel:+3800320060">+3 800 320 00 60</a>
         <div class="wrapper-footer-last-teg">
-            <div class="description">(c)PROCODE</div>
+            <div class="description">(c)PRO-CODE</div>
             <a href="#">Наш телеграм</a>
         </div>
     </div>
