@@ -23,7 +23,7 @@ a {
 
 .main-screen {
     background-color: #333333;
-    background-image: url("/img/Rectangle.png");
+    background-image: url("../img/Rectangle.png");
     z-index: 1;
     background-repeat: no-repeat;
     background-size: cover;
@@ -335,7 +335,7 @@ header {
 
 .send-form {
     background-color: #333333;
-    background-image: url("/img/form-backround.png");
+    background-image: url("../img/form-backround.png");
     background-position: center center;
     background-repeat: no-repeat;
     height: 607px;
