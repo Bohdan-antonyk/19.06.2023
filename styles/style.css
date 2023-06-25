@@ -193,8 +193,99 @@ header {
     right: -5px;
 }
 
-.main-logo-site .pro:hover, .main-logo-site .code:hover {
+.main-logo-site .pro path,
+.main-logo-site .code path {
+    stroke-dasharray: 400;
+    stroke-dashoffset: 0;
+}
+
+.main-logo-site .pro:hover,
+.main-logo-site .code:hover {
     cursor: pointer;
+}
+
+.main-logo-site .pro path {
+    animation: animate-text-white 15s linear infinite;
+}
+
+@keyframes animate-text-white {
+    0% {
+        stroke-dashoffset: 0;
+    }
+    25% {
+        stroke-dashoffset: 0;
+        fill: transparent;
+    }
+    35% {
+        stroke-dashoffset: 1000;
+        fill: transparent;
+    }
+    45% {
+        stroke-dashoffset: 2000;
+        fill: #FED233;
+    }
+    55% {
+        stroke-dashoffset: 2000;
+        fill: #FED233;
+    }
+    65% {
+        stroke-dashoffset: 1000;
+        fill: transparent;
+    }
+    75% {
+        stroke-dashoffset: 0;
+        fill: transparent;
+    }
+    100% {
+        stroke-dashoffset: 0;
+        fill: transparent;
+    }
+}
+
+.main-logo-site .pro path:nth-child(2) {
+    animation-delay: 10s;
+}
+
+.main-logo-site .code path {
+    animation: animate-text-yellow 15s linear infinite;
+}
+
+@keyframes animate-text-yellow {
+    0% {
+        stroke-dashoffset: 0;
+    }
+    25% {
+        stroke-dashoffset: 0;
+        fill: transparent;
+    }
+    35% {
+        stroke-dashoffset: 1000;
+        fill: transparent;
+    }
+    45% {
+        stroke-dashoffset: 2000;
+        fill: white;
+    }
+    55% {
+        stroke-dashoffset: 2000;
+        fill: white;
+    }
+    65% {
+        stroke-dashoffset: 1000;
+        fill: transparent;
+    }
+    75% {
+        stroke-dashoffset: 0;
+        fill: transparent;
+    }
+    100% {
+        stroke-dashoffset: 0;
+        fill: transparent;
+    }
+}
+
+.main-logo-site .pro path:nth-child(2) {
+    animation-delay: 10s;
 }
 
 .main-logo-site .code {
