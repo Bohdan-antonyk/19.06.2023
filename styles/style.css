@@ -167,6 +167,22 @@ header {
     font-weight: 600;
 }
 
+.main-screen-content button:hover svg {
+    animation: arrowAnimation 1s infinite alternate;
+}
+
+@keyframes arrowAnimation {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(5px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
 .main-logo-site {
     position: relative;
 }
@@ -198,6 +214,22 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.wrapper-scroll svg {
+    animation: mouseAnimation 1s infinite alternate;
+}
+
+@keyframes mouseAnimation {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
 }
 
 
@@ -375,6 +407,7 @@ header {
     padding-left: 20px;
     border: none;
     cursor: pointer;
+    font-weight: 600;
 }
 
 /*our-technology*/
@@ -485,6 +518,22 @@ header {
     color: #333333;
 }
 
+.footer button:hover svg {
+    animation: arrowAnimation 1s infinite alternate;
+}
+
+@keyframes arrowAnimation {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(5px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
 .footer a {
     display: block;
     color: white;
@@ -584,14 +633,14 @@ header {
     .main-screen-content {
         margin-top: 150px;
     }
+
+    .wrapper-scroll {
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 400px) {
     .send-form h2 {
         padding-top: 50px;
-    }
-
-    .scroll {
-        display: none;
     }
 }
